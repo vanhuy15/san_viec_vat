@@ -1,0 +1,48 @@
+/**
+FILE NÀY LÀ FILE CHUNG CỦA TRANG ĐĂNG NHẬP VÀ ĐĂNG KÝ
+ */
+body {
+    background-color: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.bg-auth-image {
+    background: url('../images/San_Viec_Vat.png') center center no-repeat;
+    
+    background-size: 90%; /* Chỉnh số này nhỏ lại (ví dụ 70% hoặc 80%) để logo nhỏ gọn vào giữa, không bị sát lề */
+    background-color: #ffffff; 
+    min-height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ffc107;
+}
+
+.input-group-text {
+    border-color: #ced4da;
+}
+
+.btn-warning {
+    color: #212529;
+    transition: all 0.3s;
+}
+
+.btn-warning:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4) !important;
+}
+

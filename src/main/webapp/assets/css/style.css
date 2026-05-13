@@ -1,0 +1,201 @@
+/* GLOBAL STYLES */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    /* QUAN TRỌNG: Footer dính đáy */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* FOOTER */
+footer {
+    flex-shrink: 0; 
+    margin-top: auto;
+    width: 100%;
+}
+
+/* COMPONENT: VÍ TIỀN TRÊN HEADER */
+.wallet-badge {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #218838;
+}
+.wallet-badge:hover {
+    background-color: #218838;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* COMPONENT: NÚT ĐĂNG VIỆC */
+.btn-post-job {
+    background: linear-gradient(45deg, #ffc107, #ffdb4d);
+    border: none;
+    color: #212529;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+.btn-post-job:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background: linear-gradient(45deg, #ffdb4d, #ffc107);
+}
+
+/* TABLE STYLES */
+.table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* ================= JOB LISTING PAGE & COMPONENTS ================= */
+.job-filter-sidebar {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.job-filter-sidebar .list-group-item {
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.2s;
+}
+
+.job-filter-sidebar .list-group-item:hover,
+.job-filter-sidebar .list-group-item.active {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    border-color: #ffc107;
+}
+
+/* ================= TRANG CHỦ (HOME.JSP) ================= */
+
+/* HERO SECTION */
+.hero-section {
+    background-color: #212529;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x600/?working,laptop'); 
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-search-form {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-radius: 50rem;
+    background: white;
+    padding: 5px;
+}
+
+.hero-search-input {
+    border: none;
+    box-shadow: none !important;
+    font-size: 1.1rem;
+}
+
+.hero-search-btn {
+    border-radius: 50rem;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* JOB CARD */
+.job-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #eef0f2;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.job-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-color: #ffc107;
+    cursor: pointer;
+}
+
+.job-card-title a {
+    color: #212529;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.job-card-title a:hover {
+    color: #ffc107;
+}
+
+/* PAGINATION */
+.page-link {
+    border: none;
+    color: #555;
+    margin: 0 3px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.page-link:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.page-item.active .page-link {
+    background-color: #ffc107;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(255, 193, 7, 0.4);
+}
+
+.page-item.disabled .page-link {
+    background-color: transparent;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* DROPDOWN & STICKY FIX */
+.dropdown-menu {
+    z-index: 9999 !important;
+    margin-top: 10px !important;
+}
+
+.sticky-top {
+    z-index: 1020 !important;
+}

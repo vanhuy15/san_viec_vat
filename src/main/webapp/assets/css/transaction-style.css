@@ -1,0 +1,75 @@
+/* ==============================================
+   FILE: assets/css/transaction-style.css
+   MÔ TẢ: Style chung cho các nút bộ lọc (Trắng -> Màu)
+   ============================================== */
+
+/* Style mặc định (Nền trắng, chữ xám, bo góc nhẹ) */
+.btn-filter {
+    background-color: #fff !important;
+    border: 1px solid #d1d3e2 !important;
+    color: #858796 !important;
+    font-weight: 600 !important;
+    padding: 6px 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-filter:hover {
+    background-color: #eaecf4 !important;
+    color: #5a5c69 !important;
+}
+
+/* --- MÀU SẮC KHI ACTIVE (ĐƯỢC CHỌN) --- */
+
+/* Xám (Tất cả) */
+.active-all { 
+    background-color: #858796 !important; 
+    color: #fff !important; 
+    border-color: #858796 !important;
+}
+
+/* Xanh lá (Nạp tiền / Hoàn thành) */
+.active-success { 
+    background-color: #1cc88a !important; 
+    color: #fff !important; 
+    border-color: #1cc88a !important;
+}
+
+/* Vàng (Rút tiền / Đang làm) */
+.active-warning { 
+    background-color: #f6c23e !important; 
+    color: #fff !important; 
+    border-color: #f6c23e !important;
+}
+
+/* Xanh dương (Thanh toán / Mới) */
+.active-primary { 
+    background-color: #4e73df !important; 
+    color: #fff !important; 
+    border-color: #4e73df !important;
+}
+
+/* Xanh lơ (Nhận lương / Việc vặt) */
+.active-info { 
+    background-color: #36b9cc !important; 
+    color: #fff !important; 
+    border-color: #36b9cc !important;
+}
+
+/* Đỏ (Hoàn tiền / Đã hủy / Khiếu nại) */
+.active-danger { 
+    background-color: #e74a3b !important; 
+    color: #fff !important; 
+    border-color: #e74a3b !important;
+}
+
+/* Group hành động căn giữa */
+.action-group {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
