@@ -56,7 +56,3 @@ Vì dự án đã được cấu hình tích hợp **Jetty Maven Plugin** và **
 4. Sau khi Terminal hiển thị quá trình khởi động thành công (`Started Jetty Server`), mở trình duyệt và truy cập:
    👉 **http://localhost:8080**
 
-*(Để dừng server một cách an toàn, hãy quay lại Terminal và nhấn tổ hợp phím `Ctrl + C` -> chọn `Y`)*.
-
----
-**Môn học:** Thiết kế và Lập trình Web
